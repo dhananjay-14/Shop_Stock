@@ -528,4 +528,33 @@ main {
         white-space: nowrap;
     }
 
+    .bag-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bag-items-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bag-item-container {
+        font-size: 16px;
+    }
+
+    .item-right-part {
+        margin-top: 20px;
+    }
+
+    .current-price {
+        font-size: 1.3em;
+    }
+
+    .bag-summary {
+        padding: 10px;
+        width: 100%;
+    }
+
 }
