@@ -102,3 +102,21 @@
 .add-to-cart:hover {
     background-color: #cd500d;
 }
+
+@media (max-width:400px) {
+    .product-page {
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 25px auto;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        gap: 25px
+    }
+
+    .add-to-cart {
+        width: 90vw;
+    }
+}

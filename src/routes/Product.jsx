@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { bagActions } from '../store/bagSlice';
 import { items } from '../data/items';
+import displayImg from '/images/1.jpg'
 
 const Product = () => {
     const { id } = useParams();
@@ -26,7 +27,7 @@ const Product = () => {
         <main>
             <div className="product-page">
                 <div className="product-image">
-                    <img src={items[0]} alt={product.item_name} />
+                    <img src={displayImg} alt={product.item_name} />
                 </div>
                 <div className="product-details">
                     <h2 className="product-title">{product.item_name}</h2>
