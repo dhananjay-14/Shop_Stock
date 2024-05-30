@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './ProductPage.css';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
@@ -17,6 +17,17 @@ const Product = () => {
     const { id } = useParams();
     const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]
     const bag = useSelector(store => store.bag);
+    const btn = useRef();
+    let btntxt = bag.includes(id) ? `Added` : `Add to Bag`;
+    useEffect(() => {
+        if (btn.current) {
+            if (btntxt === 'Added') {
+                btn.current.style.backgroundColor = 'green';
+            } else {
+                btn.current.style.backgroundColor = 'rgb(223, 126, 41)';
+            }
+        }
+    }, [btntxt]);
     // console.log("id ", id.id);
     const items = useSelector(store => store.items);
 
@@ -56,7 +67,7 @@ const Product = () => {
                     <div className="product-delivery">
                         <p>Delivery by: {product.delivery_date}</p>
                     </div>
-                    <button onClick={handleAddToBag} className="add-to-cart">Add to Cart</button>
+                    <button ref={btn} onClick={handleAddToBag} className="add-to-cart">{btntxt}</button>
                 </div>
             </div>
         </main>
