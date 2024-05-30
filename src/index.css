@@ -436,14 +436,14 @@ main {
 
 .Slider {
     display: flex;
-    width: 200%;
+    width: 200vw;
     transition: transform 1s ease-in-out;
     transform: translateX(-50%);
 }
 
 .Slider img {
-    width: 100%;
-    height: 450px;
+    width: 100vw;
+    height: 50vh;
 }
 
 @media (max-width:500px) {
