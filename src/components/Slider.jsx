@@ -11,7 +11,7 @@ const Slider = () => {
 
     const next = () => {
         console.log("next called");
-        const newPosition = currentPosition === 0 ? 50 : 0; // Toggle between 0 and 50
+        const newPosition = currentPosition === 0 ? 100 : 0; // Toggle between 0 and 50
         if (slider.current)
             slider.current.style.transform = `translateX(-${newPosition}%)`;
         setCurrentPosition(newPosition);

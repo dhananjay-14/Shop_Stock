@@ -415,6 +415,7 @@ a.action_container:link {
 
 main {
     margin-top: 15vh;
+    overflow: hidden;
 }
 
 .mycontainer {
@@ -436,7 +437,7 @@ main {
 
 .Slider {
     display: flex;
-    width: 200vw;
+    width: 100vw;
     transition: transform 1s ease-in-out;
     transform: translateX(-50%);
 }
@@ -499,7 +500,7 @@ main {
 
     .Slider {
         display: flex;
-        width: 200%;
+        width: 100vw;
     }
 
     .Slider img {
@@ -509,6 +510,7 @@ main {
 
     main {
         margin-top: 10vh;
+        overflow: hidden;
     }
 
     .items-container {
