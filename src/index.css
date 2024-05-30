@@ -483,3 +483,49 @@ main {
     }
 
 }
+
+@media (max-width:400px) {
+    .nav_bar {
+        display: none;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .action_bar {
+        margin-right: 5vw;
+    }
+
+    .Slider {
+        display: flex;
+        width: 200%;
+    }
+
+    .Slider img {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    main {
+        margin-top: 10vh;
+    }
+
+    .items-container {
+        margin: 10px auto;
+
+    }
+
+    .item-container {
+        width: 30vw;
+    }
+
+    .price {
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 15px;
+        color: #282c3f;
+        white-space: nowrap;
+    }
+
+}
